@@ -18,6 +18,7 @@ const customMware = require('./config/middleware');
 app.use(express.urlencoded());
 
 app.use(cookieParser());
+const redis = require('./config/redis');
 const db = require('./config/mongoose');
 // import db from './config/mongoose';
 //use for session cookies
